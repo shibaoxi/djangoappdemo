@@ -14,5 +14,5 @@ RUN sed -i 's/\r//' ./start.sh
 
 RUN chmod +x ./start.sh
 
-CMD [ "start.sh" ]
+ENTRYPOINT sh ./start.sh
 
